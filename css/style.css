@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+
+}
+
+header {
+    background-color: lightblue;
+    height: 80px;
+    width: calc(100vw - 230px);
+    opacity: 0.5;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    order: 1;
+    
+}
+
+aside {
+    background-color: lightgreen;
+    width: 230px;
+    height: calc(100vh - 90px);
+    opacity: 0.5;
+    flex: 0 0 230px;
+}
+
+main {
+    background-color: red;
+    width: calc(100% - 230px);
+    opacity: 0.5;
+    order: 2;
+    overflow-y: auto;
+    flex: 1 0 auto;
+}
+
+footer {
+    opacity: 0.5;
+    background-color: black;
+    height: 90px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    order: 3;
+}
