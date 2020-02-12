@@ -4,46 +4,115 @@
     box-sizing: border-box;
 }
 
-.container {
-    display: flex;
+/* Branding Guidelines https://developer.spotify.com/branding-guidelines/ */
+:root {
+    /* Palette */
+    --black-spotify: #121212;
+    --green-spotify: #1DB954;
+    --white-spotify: #FFFFFF;
+
+    /*  */
+    --player-spotify: #282828;
+    --black: #040404;
+    --headercolor-spotify: rgba(0,0,0,.4);
+
+    /*  */
+    --glue-font-weight-normal: 400;
+    --glue-font-weight-bold: 700;
+    --glue-font-weight-black: 900;
+}
+
+html {
+    scrollbar-color: hsla(0,0%,100%,.3) transparent;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--black-spotify);
 
 }
 
-header {
-    background-color: lightblue;
-    height: 80px;
-    width: calc(100vw - 230px);
-    opacity: 0.5;
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    order: 1;
-    
+.container,
+.sub-container-1,
+.sub-container-2,
+header,
+aside,
+.nav,
+.nav ul,
+.nav li {
+    display: flex;
 }
 
 aside {
-    background-color: lightgreen;
+    background-color: var(--black);
     width: 230px;
     height: calc(100vh - 90px);
-    opacity: 0.5;
     flex: 0 0 230px;
+
+}
+
+.nav {
+    flex-direction: column;
+}
+
+.logo {
+    padding: 24px 18px;
+}
+.spotify-logo--text {
+    fill: var(--white-spotify);
+    width: 131px;
+    height: 40px;
+}
+
+.nav ul {
+    flex-direction: column;
+    padding-left: 18px;
+}
+.nav li {
+    color: var(--white-spotify);
+    align-items: center;
+}
+footer {
+    background-color: var(--player-spotify);
+    height: 90px;
+    width: 100vw;
+    flex: 1 0 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.container-right {
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: var(--headercolor-spotify);
+    height: 80px;
+    width: calc(100% - 245px);
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+}
+
+.header-cta button{
+    background-color: transparent;
+    border: 1px solid var(--white-spotify);
+    color: var(--white-spotify);
+    text-transform: uppercase;
+    border-radius: 500px;
+    padding: 8px 34px;
+    font-weight: var(--glue-font-weight-normal);
 }
 
 main {
-    background-color: red;
+    padding-top: 80px;
+    background-color: var(--black-spotify);
     width: calc(100% - 230px);
-    opacity: 0.5;
-    order: 2;
+    height: calc(100vh - 90px);
     overflow-y: auto;
-    flex: 1 0 auto;
-}
-
-footer {
-    opacity: 0.5;
-    background-color: black;
-    height: 90px;
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
-    order: 3;
+    flex: 1 0 calc(100% - 230px);
 }
