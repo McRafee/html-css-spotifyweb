@@ -15,10 +15,11 @@
     --player-spotify: #282828;
     --black: #040404;
     --headercolor-spotify: rgba(0,0,0,.4);
+    --lightgrey: #b3b3b3;
 
     /*  */
     --glue-font-weight-normal: 400;
-    --glue-font-weight-bold: 700;
+    --glue-font-weight-bold: 500;
     --glue-font-weight-black: 900;
 }
 
@@ -67,12 +68,37 @@ aside {
 
 .nav ul {
     flex-direction: column;
-    padding-left: 18px;
 }
 .nav li {
     color: var(--white-spotify);
+    color: var(--lightgrey);
+    align-items: center;
+    border-left: 3px solid var(--black);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    font-weight: var(--glue-font-weight-bold);
+    letter-spacing: .03em;
+}
+
+.nav li:hover {
+    color: var(--white-spotify);
+}
+
+.nav li.active {
+    color: var(--white-spotify);
+    border-left: 3px solid var(--green-spotify);
     align-items: center;
 }
+
+.nav li svg {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+/* .nav label {
+    display: none;
+} */
 footer {
     background-color: var(--player-spotify);
     height: 90px;
