@@ -446,10 +446,9 @@ header {
 main {
     padding-top: 80px;
     background-color: var(--black-spotify);
-    width: calc(100% - 230px);
+    width: calc(100vw - 230px);
     height: calc(100vh - 90px);
     overflow-y: auto;
-    overflow-x: hidden;
     /* flex: 1 0 calc(100% - 230px); */
     flex-direction: column;
     padding-right: 20px;
@@ -458,14 +457,15 @@ main {
 .list-top {
     margin: 15px;
 
-
 }
 .list-top ul {
     /* flex-wrap: wrap; */
     overflow-x: auto;
+    width: 100%;
 
 }
 
+main::-webkit-scrollbar {    display: none;}
 .list-top li {
     text-transform: uppercase;
     font-size: 12px;
@@ -497,18 +497,27 @@ main {
 }
 
 .recently-played-carousel {
-    margin: 15px;;
+    /* margin: 15px; */
+
+
+
 }
 
 .recently-played-carousel ul{
-    overflow-x: scroll;
+    /* width: 100%; */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+
+
 }
 .recently-played-carousel li {
     flex-direction: column;
     align-items: center;
     margin: 15px;
-    flex: 0 0 auto;
+
 }
+
 
 .album img {
     width: 128px;
