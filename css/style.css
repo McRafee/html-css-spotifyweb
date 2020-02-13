@@ -46,6 +46,7 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--black-spotify);
+    overflow-x: hidden;
 }
 
 a, a:focus, a:hover {
@@ -61,6 +62,7 @@ a:focus, a:hover {
 .sub-container-2,
 header,
 aside,
+main,
 .nav,
 .nav ul,
 .nav li,
@@ -74,7 +76,11 @@ aside,
 .player-control-right,
 .text-song,
 .controls,
-.slider-song {
+.slider-song,
+.list-top ul,
+.list-top li,
+.recently-played-carousel ul,
+.recently-played-carousel li {
     display: flex;
 }
 
@@ -185,7 +191,7 @@ svg.download {
 }
 
 img.user-img {
-    width: 30px;
+    width: 25px;
     border-radius: 50px;
     margin-left: 18px;
     margin-right: 18px;
@@ -212,12 +218,14 @@ footer {
     height: 100%;
     align-items: center;
     justify-content: space-between;
+    margin-left: 30px
 }
 
 .player-control-left {
     width: 30%;
     min-width: 180px;
     align-items: center;
+
 }
 .img-song,
 .text-song,
@@ -305,6 +313,10 @@ a.artist:hover{
     color: var(--white-spotify);
 }
 
+.shuffle,
+.shuffle:hover {
+    color: var(--green-spotify);
+}
 .slider-volume,
 .slider-s {
     transform: translateY(-3px);
@@ -437,5 +449,82 @@ main {
     width: calc(100% - 230px);
     height: calc(100vh - 90px);
     overflow-y: auto;
-    flex: 1 0 calc(100% - 230px);
+    overflow-x: hidden;
+    /* flex: 1 0 calc(100% - 230px); */
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.list-top {
+    margin: 15px;
+
+
+}
+.list-top ul {
+    /* flex-wrap: wrap; */
+    overflow-x: auto;
+
+}
+
+.list-top li {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--lightgrey);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: var(--glue-font-weight-bold);
+    list-style-type: none;
+    flex: 0 0 auto;
+
+}
+
+.list-top li.active {
+    color: var(--white-spotify);
+    border-bottom: 3px solid var(--green-spotify);
+    align-items: center;
+}
+.list-top li:hover {
+    color: var(--white-spotify);
+}
+
+.recently-played h2 {
+    color: var(--white-spotify);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 10px;
+}
+
+.recently-played-carousel {
+    margin: 15px;;
+}
+
+.recently-played-carousel ul{
+    overflow-x: scroll;
+}
+.recently-played-carousel li {
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    flex: 0 0 auto;
+}
+
+.album img {
+    width: 128px;
+
+}
+
+.album-name h5 {
+    color: var(--white-spotify);
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.artist h6 {
+    color: var(--lightgrey);
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
