@@ -80,7 +80,13 @@ main,
 .list-top ul,
 .list-top li,
 .recently-played-carousel ul,
-.recently-played-carousel li {
+.recently-played-carousel li,
+.created-for-carousel ul,
+.created-for-carousel li,
+.created-for-carousel,
+.pop-artists-carousel,
+.pop-artists-carousel ul,
+.pop-artists-carousel li {
     display: flex;
 }
 
@@ -225,6 +231,7 @@ footer {
     width: 30%;
     min-width: 180px;
     align-items: center;
+    justify-content: flex-start;
 
 }
 .img-song,
@@ -280,7 +287,9 @@ a.artist:hover{
 
 
 .player-control-center {
+    width: 30%;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -289,7 +298,9 @@ a.artist:hover{
 
 
 .player-control-right {
+    width: 30%;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .queue,
@@ -489,44 +500,45 @@ main::-webkit-scrollbar {    display: none;}
     color: var(--white-spotify);
 }
 
-.recently-played h2 {
+.recently-played h2,
+.created-for h2,
+.pop-artists h2 {
     color: var(--white-spotify);
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 10px;
 }
 
-.recently-played-carousel {
-    /* margin: 15px; */
-
-
-
-}
-
-.recently-played-carousel ul{
-    /* width: 100%; */
+.recently-played-carousel ul,
+.created-for-carousel ul,
+.pop-artists-carousel ul {
     flex-wrap: nowrap;
     overflow-x: auto;
 
-
-
 }
-.recently-played-carousel li {
+.recently-played-carousel li,
+.created-for-carousel li,
+.pop-artists-carousel li {
     flex-direction: column;
     align-items: center;
     margin: 15px;
-
+    align-content: center;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 
 .album img {
     width: 128px;
-
+}
+.album-artist img {
+    width: 180px;
+    border-radius: 50%;
 }
 
 .album-name h5 {
     color: var(--white-spotify);
-    font-size: 14px;
+    font-size: 13px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
