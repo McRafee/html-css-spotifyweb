@@ -24,28 +24,30 @@
                             </path>
                         </svg>
                     </div>
-                    <ul>
-                        <li class="active">
-                            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path>
-                            </svg>
-                            <label>Home</label>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
-                                    fill="currentColor" fill-rule="evenodd"></path>
-                            </svg>
-                            <label>Search</label>
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path>
-                            </svg>
-                            <label>Your library</label>
-                        </li>
-                    </ul>
+                    <div class="menu">
+                        <ul>
+                            <li class="active">
+                                <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path>
+                                </svg>
+                                <label>Home</label>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                                <label>Search</label>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path>
+                                </svg>
+                                <label>Your library</label>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="playlists">
                         <h2>playlists</h2>
                         <ul>
@@ -111,7 +113,12 @@
                     <div class="nav-bottom">
                         <div class="nav-app">
                             <li>
-                                <svg class="download" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                                <svg class="download" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Download icon</title>
+                                    <path
+                                        d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
                                 <label>Install App</label>
                             </li>
                         </div>
@@ -123,10 +130,242 @@
                             </li>
                         </div>
                     </div>
-
-
                 </div>
             </aside>
+            <div class="main">
+                <header>
+                    <div class="header-cta">
+                        <button type="button" name="Upgrade">
+                            Go Premium
+                        </button>
+                    </div>
+                </header>
+                <div class="list-top">
+                    <ul>
+                        <li class="active">Recently Played</li>
+                        <li>Made for you</li>
+                        <li>Albums</li>
+                        <li>Artists</li>
+                        <li>Podcasts</li>
+                    </ul>
+                </div>
+                <div class="recently-played">
+                    <h2>Recently Played</h2>
+                    <div class="recently-played-carousel">
+                        <ul>
+                            <li>
+                                <div class="album album-item">
+                                    <div class="album-item album-item-caption w-100 h-100">
+                                        <div class="album-item-caption-content">
+                                            <i class="far fa-play-circle play-hover"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img/breakfast-in-america.jpg" alt="">
+                                </div>
+                                <div class="album-name">
+                                    <h5>Breakfast in America</h5>
+                                </div>
+                                <div class="artist">
+                                    <h6>Supertramp</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="album album-item">
+                                    <div class="album-item album-item-caption w-100 h-100">
+                                        <div class="album-item-caption-content">
+                                            <i class="far fa-play-circle play-hover"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img/breakfast-in-america.jpg" alt="">
+                                </div>
+                                <div class="album-name">
+                                    <h5>Breakfast in America</h5>
+                                </div>
+                                <div class="artist">
+                                    <h6>Supertramp</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="album album-item">
+                                    <div class="album-item album-item-caption w-100 h-100">
+                                        <div class="album-item-caption-content">
+                                            <i class="far fa-play-circle play-hover"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img/breakfast-in-america.jpg" alt="">
+                                </div>
+                                <div class="album-name">
+                                    <h5>Breakfast in America</h5>
+                                </div>
+                                <div class="artist">
+                                    <h6>Supertramp</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="album album-item">
+                                    <div class="album-item album-item-caption w-100 h-100">
+                                        <div class="album-item-caption-content">
+                                            <i class="far fa-play-circle play-hover"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img/breakfast-in-america.jpg" alt="">
+                                </div>
+                                <div class="album-name">
+                                    <h5>Breakfast in America</h5>
+                                </div>
+                                <div class="artist">
+                                    <h6>Supertramp</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="album album-item">
+                                    <div class="album-item album-item-caption w-100 h-100">
+                                        <div class="album-item-caption-content">
+                                            <i class="far fa-play-circle play-hover"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img/breakfast-in-america.jpg" alt="">
+                                </div>
+                                <div class="album-name">
+                                    <h5>Breakfast in America</h5>
+                                </div>
+                                <div class="artist">
+                                    <h6>Supertramp</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="album album-item">
+                                    <div class="album-item album-item-caption w-100 h-100">
+                                        <div class="album-item-caption-content">
+                                            <i class="far fa-play-circle play-hover"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img/breakfast-in-america.jpg" alt="">
+                                </div>
+                                <div class="album-name">
+                                    <h5>Breakfast in America</h5>
+                                </div>
+                                <div class="artist">
+                                    <h6>Supertramp</h6>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="created-for">
+                    <h2>Created for Leonardo Fibonacci</h2>
+                    <div class="created-for-carousel">
+                        <ul>
+                            <li>
+                                <div class="album album-item">
+                                    <div class="album-item album-item-caption w-100 h-100">
+                                        <div class="album-item-caption-content">
+                                            <i class="far fa-play-circle play-hover"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img/breakfast-in-america.jpg" alt="">
+                                </div>
+                                <div class="album-name">
+                                    <h5>Breakfast in America</h5>
+                                </div>
+                                <div class="artist">
+                                    <h6>Supertramp</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="album album-item">
+                                    <div class="album-item album-item-caption w-100 h-100">
+                                        <div class="album-item-caption-content">
+                                            <i class="far fa-play-circle play-hover"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img/breakfast-in-america.jpg" alt="">
+                                </div>
+                                <div class="album-name album-item">
+                                    <h5>Breakfast in America</h5>
+                                </div>
+                                <div class="artist">
+                                    <h6>Supertramp</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="album album-item">
+                                    <div class="album-item album-item-caption w-100 h-100">
+                                        <div class="album-item-caption-content">
+                                            <i class="far fa-play-circle play-hover"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img/breakfast-in-america.jpg" alt="">
+                                </div>
+                                <div class="album-name">
+                                    <h5>Breakfast in America</h5>
+                                </div>
+                                <div class="artist">
+                                    <h6>Supertramp</h6>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pop-artists">
+                    <h2>Artists</h2>
+                    <div class="pop-artists-carousel">
+                        <ul>
+                            <li>
+                                <div class="album-artist album-item">
+                                    <div class="album-item album-item-caption w-100 h-100">
+                                        <div class="album-item-caption-content">
+                                            <i class="far fa-play-circle play-hover"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img/pink-floyd.jpg" alt="">
+                                </div>
+                                <div class="album-name">
+                                    <h5>Pink Floyd</h5>
+                                </div>
+                                <div class="artist">
+                                    <h6>Artist</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="album-artist album-item">
+                                    <div class="album-item album-item-caption w-100 h-100">
+                                        <div class="album-item-caption-content">
+                                            <i class="far fa-play-circle play-hover"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img/pino-daniele.jpg" alt="">
+                                </div>
+                                <div class="album-name">
+                                    <h5>Pino Daniele</h5>
+                                </div>
+                                <div class="artist">
+                                    <h6>Artist</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="album-artist album-item">
+                                    <div class="album-item album-item-caption w-100 h-100">
+                                        <div class="album-item-caption-content">
+                                            <i class="far fa-play-circle play-hover"></i>
+                                        </div>
+                                    </div>
+                                    <img src="img/franco-battiato.jpg" alt="">
+                                </div>
+                                <div class="album-name">
+                                    <h5>Franco Battiato</h5>
+                                </div>
+                                <div class="artist">
+                                    <h6>Artist</h6>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-container-2">
             <footer>
                 <div class="player-control">
                     <div class="player-control-left">
@@ -145,7 +384,12 @@
                             <i class="far fa-heart"></i>
                         </div>
                         <div class="fullscreen">
-                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" fill-rule="evenodd"><path d="M1 3v9h14V3H1zm0-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" fill-rule="nonzero"></path><path d="M10 8h4v3h-4z"></path></g></svg>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="currentColor" fill-rule="evenodd">
+                                    <path d="M1 3v9h14V3H1zm0-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" fill-rule="nonzero"></path>
+                                    <path d="M10 8h4v3h-4z"></path>
+                                </g>
+                            </svg>
                         </div>
                     </div>
                     <div class="player-control-center">
@@ -194,179 +438,6 @@
                     </div>
                 </div>
             </footer>
-        </div>
-        <div class="sub-container-2">
-            <header>
-                <div class="header-cta">
-                    <button type="button" name="Upgrade">
-                        Go Premium
-                    </button>
-                </div>
-            </header>
-            <main>
-                <div class="list-top">
-                    <ul>
-                        <li class="active">Recently Played</li>
-                        <li>Made for you</li>
-                        <li>Albums</li>
-                        <li>Artists</li>
-                        <li>Podcasts</li>
-                    </ul>
-                </div>
-                <div class="recently-played">
-                    <h2>Recently Played</h2>
-                    <div class="recently-played-carousel">
-                        <ul>
-                            <li>
-                                <div class="album">
-                                    <img src="img/breakfast-in-america.jpg" alt="">
-                                </div>
-                                <div class="album-name">
-                                    <h5>Breakfast in America</h5>
-                                </div>
-                                <div class="artist">
-                                    <h6>Supertramp</h6>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="album">
-                                    <img src="img/breakfast-in-america.jpg" alt="">
-                                </div>
-                                <div class="album-name">
-                                    <h5>Breakfast in America</h5>
-                                </div>
-                                <div class="artist">
-                                    <h6>Supertramp</h6>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="album">
-                                    <img src="img/breakfast-in-america.jpg" alt="">
-                                </div>
-                                <div class="album-name">
-                                    <h5>Breakfast in America</h5>
-                                </div>
-                                <div class="artist">
-                                    <h6>Supertramp</h6>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="album">
-                                    <img src="img/breakfast-in-america.jpg" alt="">
-                                </div>
-                                <div class="album-name">
-                                    <h5>Breakfast in America</h5>
-                                </div>
-                                <div class="artist">
-                                    <h6>Supertramp</h6>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="album">
-                                    <img src="img/breakfast-in-america.jpg" alt="">
-                                </div>
-                                <div class="album-name">
-                                    <h5>Breakfast in America</h5>
-                                </div>
-                                <div class="artist">
-                                    <h6>Supertramp</h6>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="album">
-                                    <img src="img/breakfast-in-america.jpg" alt="">
-                                </div>
-                                <div class="album-name">
-                                    <h5>Breakfast in America</h5>
-                                </div>
-                                <div class="artist">
-                                    <h6>Supertramp</h6>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="created-for">
-                    <h2>Created for Leonardo Fibonacci</h2>
-                    <div class="created-for-carousel">
-                        <ul>
-                            <li>
-                                <div class="album">
-                                    <img src="img/breakfast-in-america.jpg" alt="">
-                                </div>
-                                <div class="album-name">
-                                    <h5>Breakfast in America</h5>
-                                </div>
-                                <div class="artist">
-                                    <h6>Supertramp</h6>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="album">
-                                    <img src="img/breakfast-in-america.jpg" alt="">
-                                </div>
-                                <div class="album-name">
-                                    <h5>Breakfast in America</h5>
-                                </div>
-                                <div class="artist">
-                                    <h6>Supertramp</h6>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="album">
-                                    <img src="img/breakfast-in-america.jpg" alt="">
-                                </div>
-                                <div class="album-name">
-                                    <h5>Breakfast in America</h5>
-                                </div>
-                                <div class="artist">
-                                    <h6>Supertramp</h6>
-                                </div>
-                            </li>
-                        </ul>
-                </div>
-                <div class="pop-artists">
-                    <h2>Artists</h2>
-                    <div class="pop-artists-carousel">
-                        <ul>
-                            <li>
-                                <div class="album-artist">
-                                    <img src="img/breakfast-in-america.jpg" alt="">
-                                </div>
-                                <div class="album-name">
-                                    <h5>Pink Floyd</h5>
-                                </div>
-                                <div class="artist">
-                                    <h6>Artist</h6>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="album-artist">
-                                    <img src="img/breakfast-in-america.jpg" alt="">
-                                </div>
-                                <div class="album-name">
-                                    <h5>Pino Daniele</h5>
-                                </div>
-                                <div class="artist">
-                                    <h6>Artist</h6>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="album-artist">
-                                    <img src="img/breakfast-in-america.jpg" alt="">
-                                </div>
-                                <div class="album-name">
-                                    <h5>Franco Battiato</h5>
-                                </div>
-                                <div class="artist">
-                                    <h6>Artist</h6>
-                                </div>
-                            </li>
-
-
-                </div>
-            </main>
         </div>
     </div>
 </body>
