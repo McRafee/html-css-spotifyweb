@@ -66,11 +66,14 @@ a:focus, a:hover {
 .sub-container-2,
 header,
 aside,
+.logo,
 .menu,
 .main,
 .nav,
 .nav ul,
 .nav li,
+.menu ul,
+.menu li,
 .nav .playlists ul,
 .nav-bottom,
 .nav-app,
@@ -101,18 +104,13 @@ aside,
     flex-direction: column;
 }
 
-.sub-container-1 {
-    height: calc(100vh - 90px);
-}
-
-
 aside {
     background-color: var(--black);
+    height: calc(100vh - 90px);
 
 }
 
 .nav {
-    /* height: calc(100vh - 90px); */
     flex-direction: column;
     justify-content: space-between;
     width: 230px;
@@ -125,6 +123,13 @@ aside {
     fill: var(--white-spotify);
     width: 131px;
     height: 40px;
+}
+
+.spotify-logo {
+    fill: var(--white-spotify);
+    width: 35px;
+    height: 35px;
+    display: none;
 }
 
 .menu {
@@ -195,8 +200,7 @@ aside {
 
 
 .nav .playlists ul {
-    min-height: 100px;
-    max-height: 200px;
+    max-height: 150px;
     width: 225px;
     overflow-x: auto;
 }
@@ -209,9 +213,7 @@ aside {
 .nav .playlists li:first-child {
     margin-bottom: 15px;
 }
-/* .nav label {
-    display: none;
-} */
+
 
 hr.divider {
     margin: 4px 24px 4px 24px;
@@ -240,7 +242,6 @@ img.user-img {
     color: var(--white-spotify);
     font-size: 12px;
     font-weight: var(--glue-font-weight-bold);
-
 }
 
 footer {
@@ -257,7 +258,7 @@ footer {
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    margin-left: 30px
+    margin-left: 30px;
 }
 
 .player-control-left {
@@ -314,10 +315,6 @@ a.artist:hover{
 .img-song img {
     width: 56px;
 }
-
-
-
-
 
 .player-control-center {
     width: 30%;
@@ -465,6 +462,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 15px;
+    z-index: 999;
 }
 
 .header-cta button {
@@ -574,6 +572,7 @@ header {
 .album img {
     width: 128px;
 }
+
 .album-artist img {
     width: 180px;
     border-radius: 50%;
@@ -633,4 +632,82 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .nav {
+        width: 60px;
+    }
+    .nav-app li label,
+    .nav-user li h3,
+    .playlists,
+    .divider,
+    .nav label,
+    .spotify-logo--text,
+    .img-song,
+    .player-control-right {
+        display: none;
+    }
+
+    .spotify-logo {
+        display: block;
+    }
+    .logo {
+        padding: 24px 0;
+        justify-content: center;
+    }
+    .nav li,
+    .nav li.active {
+        border-left: 0;
+    }
+
+    .nav li svg {
+        margin-left: 0;
+        margin-right: 0;
+        border-left: 0;
+    }
+
+    .menu,
+    .nav-app,
+    .nav-user {
+        justify-content: center;
+    }
+
+    img.user-img {
+        width: 25px;
+        border-radius: 50px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header,
+    .main {
+        width: calc(100vw - 60px);
+    }
+
+    #mysong {
+      width: 150px;
+    }
+
+    #myvol {
+      width: 80px;
+    }
+
+    .player-control {
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+
+    .player-control-left {
+        width: 50%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .player-control-central {
+        width: 50%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 }
